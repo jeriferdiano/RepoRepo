@@ -7,6 +7,17 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <div>Hello world</div>
+        <p>M to CM</p>
+        Meter :<input type="number" name="meter" id="meter"> <br>
+        <button onclick="convert()">Convert</button>
+
+        <h5 id="cm"></h5>
+        <script>
+            function convert(){
+                var meter = document.getElementById('meter').value;
+                var cm = parseInt(meter) * 100;
+                document.getElementById('cm').innerHTML=cm+" CM"
+            }
+        </script>
     </body>
 </html>
