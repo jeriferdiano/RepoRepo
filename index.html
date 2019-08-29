@@ -8,5 +8,19 @@
     </head>
     <body>
         <div>Hello World</div>
+<<<<<<< HEAD
+=======
+        <p>M to CM</p>
+        Meter :<input type="number" name="meter" id="meter"> <br>
+        <button onclick="convert()">Convert</button>
+        <h5 id="cm"></h5>
+        <script>
+            function convert(){
+                var meter = document.getElementById('meter').value;
+                var cm = parseInt(meter) * 100;
+                document.getElementById('cm').innerHTML=cm+" CM"
+            }
+        </script>
+>>>>>>> hitung_umur
     </body>
 </html>
